@@ -2,7 +2,7 @@ import socket
 
 def main():
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    host = 'www.microsoft.com'
+    host = 'localhost'
     port = 5000
     result = s.connect_ex((host, port))
     print('El Resultado {}'.format(result))
